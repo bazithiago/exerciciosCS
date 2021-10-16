@@ -31,9 +31,30 @@ namespace exerciciosCS
                 switch (option)
                 {
                     case 1:
-                       
+                        int weight; 
+                        double height;
+                        double imc;
 
-                        break;
+                        Console.WriteLine("Qual o seu peso(kg)? Digite apenas números, exemplo: 60");
+                        weight = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Qual o sua altura(m)? Digite apenas números, exemplo: 1.75");
+                        height = Convert.ToDouble(Console.ReadLine());    
+                       
+                        imc = Math.Round(weight / (height * height), 2); 
+                        
+                        Console.WriteLine($"Seu é IMC é igual a {imc}, portanto:");                       
+                        
+                        if(imc < 20) {
+                            Console.WriteLine($"Você está abaixo do peso ideal");
+                            return;
+                        } else if (imc >= 20 && imc < 25) {
+                            Console.WriteLine($"Você está dentro no peso ideal");
+                            return;
+                        } else {
+                            Console.WriteLine($"Você está acima no peso ideal");
+                            return;
+                        };
 
                     case 2:
                         
