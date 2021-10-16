@@ -76,16 +76,71 @@ namespace exerciciosCS
                         Console.WriteLine("Vamos calcular o volume de uma esfera.\nQual o raio (em metros) da sua esfera? Digite apenas números, ex: 0.75");
                         radius = Convert.ToDouble(Console.ReadLine());
 
-                        volume = Math.Round((4 * 3.1416 * (radius * radius * radius)/3), 2);
+                        volume = Math.Round((4 * 3.1416 * Math.Pow(radius, 3)/3), 2);
                         Console.WriteLine($"O volume da sua esfera é de {volume} metros cúbicos");
     
                         break;
 
                     case 4:
+                        double grade1;
+                        double grade2;
+                        double grade3;
+                        double rec;
+                        double averageStudent;
+                        double newAverageStudent;
+                        int averageGeneral = 7;
+                        int averageExam = 5;
+
+                        double averageCalc(double n1, double n2, double n3){
+                            return (n1 + n2 + n3)/3;
+                        }
+
+                        Console.WriteLine("Digite a nota 1. Ex: 8.25");
+                        grade1 = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Digite a nota 2. Ex: 8.25");
+                        grade2 = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Digite a nota 3. Ex: 8.25");
+                        grade3 = Convert.ToDouble(Console.ReadLine());
+
+                        averageStudent = Math.Round(averageCalc(grade1, grade2, grade3), 2);
+
+                        double approval(double averageStudent, double averageValue) {
+                            if(averageStudent >= averageValue) {
+                                return 0;
+                            } else {
+                                return 1;
+                            }   
+                        }
                         
 
-                        break;
+                        if(approval(averageStudent, averageGeneral) < 0) {
+                            Console.WriteLine($"Para aprovação você precisa de {averageGeneral}. \nSua média foi {averageStudent}.");
+                            Console.WriteLine($"Você está Aprovado");
+                            break;
+                        } else {
+                            Console.WriteLine($"Para aprovação você precisa de {averageGeneral}. \nSua média foi {averageStudent}.");
+                            Console.WriteLine("Em recuperação. digite a nota do exame:");
+                            rec = Convert.ToDouble(Console.ReadLine());
+                            newAverageStudent = Math.Round((rec + averageStudent) / 2, 2);
 
+                            switch(approval(newAverageStudent, averageExam)) {
+                                case 0:
+                                    Console.WriteLine($"Para aprovação você precisa de {averageExam}. \nSua média foi {averageStudent}."); 
+                                    Console.WriteLine($"Você está Aprovado");
+                                break;
+
+                                case 1:
+                                    Console.WriteLine($"Para aprovação você precisa de {averageExam}. \nSua média foi {averageStudent}."); 
+                                    Console.WriteLine("Você está Reprovado");
+                                break;
+                            }
+                            ;
+                        }
+                        
+                        
+
+                    break;
+                        
                     case 5:
                         
                         break;
@@ -104,6 +159,10 @@ namespace exerciciosCS
                 Console.WriteLine("\nAperte ENTER para continuar");
                 Console.ReadLine();
                 Console.Clear();
+
+
+                
+
 
 
             } while (validate);       
