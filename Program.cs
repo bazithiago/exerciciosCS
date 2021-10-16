@@ -139,7 +139,10 @@ namespace exerciciosCS
                     break;
                         
                     case 5:
-                        
+                        Cachorro cachorro = new Cachorro("Kiko");
+                        Console.WriteLine($"O cachorro se chama {cachorro.name}");
+
+
                         break;
 
                     case 6:
