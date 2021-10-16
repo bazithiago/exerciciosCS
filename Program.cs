@@ -57,7 +57,15 @@ namespace exerciciosCS
                         };
 
                     case 2:
-                        
+                        double salary;
+                        double minSalary = 1192.4;
+                        double result;
+
+                        Console.WriteLine("Qual o seu salário mensal? Digite apenas números, exemplo: 3500.25");
+                        salary = Convert.ToDouble(Console.ReadLine());
+
+                        result = Math.Round(salary / minSalary, 2);
+                        Console.WriteLine($"Você recebe {result} vezes um salário mínimo");                        
 
                         break;
 
