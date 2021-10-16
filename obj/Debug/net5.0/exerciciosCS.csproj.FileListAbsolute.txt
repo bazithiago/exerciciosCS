@@ -1,0 +1,15 @@
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/obj/Debug/net5.0/exerciciosCS.csproj.AssemblyReference.cache
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/obj/Debug/net5.0/exerciciosCS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/obj/Debug/net5.0/exerciciosCS.AssemblyInfoInputs.cache
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/obj/Debug/net5.0/exerciciosCS.AssemblyInfo.cs
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/obj/Debug/net5.0/exerciciosCS.csproj.CoreCompileInputs.cache
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/bin/Debug/net5.0/exerciciosCS.deps.json
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/bin/Debug/net5.0/exerciciosCS.runtimeconfig.json
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/bin/Debug/net5.0/exerciciosCS.runtimeconfig.dev.json
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/bin/Debug/net5.0/exerciciosCS.dll
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/bin/Debug/net5.0/ref/exerciciosCS.dll
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/bin/Debug/net5.0/exerciciosCS.pdb
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/obj/Debug/net5.0/exerciciosCS.dll
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/obj/Debug/net5.0/ref/exerciciosCS.dll
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/obj/Debug/net5.0/exerciciosCS.pdb
+/Users/bazinga/Downloads/@ARQUIVO/AULAS/C&A Fashion Devs/dotNET_projects/exerciciosCS/obj/Debug/net5.0/exerciciosCS.genruntimeconfig.cache
