@@ -104,16 +104,15 @@ namespace exerciciosCS
 
                         averageStudent = Math.Round(averageCalc(grade1, grade2, grade3), 2);
 
-                        double approval(double averageStudent, double averageValue) {
-                            if(averageStudent >= averageValue) {
-                                return 0;
+                        bool approval(double average, double averageValue) {
+                            if(average >= averageValue) {
+                                return true;
                             } else {
-                                return 1;
+                                return false;
                             }   
                         }
-                        
 
-                        if(approval(averageStudent, averageGeneral) < 0) {
+                        if(approval(averageStudent, averageGeneral)) {
                             Console.WriteLine($"Para aprovação você precisa de {averageGeneral}. \nSua média foi {averageStudent}.");
                             Console.WriteLine($"Você está Aprovado");
                             break;
@@ -124,20 +123,18 @@ namespace exerciciosCS
                             newAverageStudent = Math.Round((rec + averageStudent) / 2, 2);
 
                             switch(approval(newAverageStudent, averageExam)) {
-                                case 0:
+                                case true:
                                     Console.WriteLine($"Para aprovação você precisa de {averageExam}. \nSua média foi {averageStudent}."); 
                                     Console.WriteLine($"Você está Aprovado");
                                 break;
 
-                                case 1:
+                                case false:
                                     Console.WriteLine($"Para aprovação você precisa de {averageExam}. \nSua média foi {averageStudent}."); 
                                     Console.WriteLine("Você está Reprovado");
                                 break;
                             }
                             ;
-                        }
-                        
-                        
+                        }          
 
                     break;
                         
