@@ -6,6 +6,7 @@ namespace exerciciosCS
         public Fish(string name)
         {
             this.setName(name);
+            this.setType("Peixe ou outro tipo");
         }
 
         

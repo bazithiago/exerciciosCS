@@ -5,8 +5,8 @@ namespace exerciciosCS
     {
         public string name;
         public string type;
-        public string kingdom = "Animalia";
-        public bool domestic = true;
+        protected string kingdom = "Animalia";
+        protected bool domestic = true;
         
         public string getName()
         {
@@ -16,6 +16,16 @@ namespace exerciciosCS
         public void setName(string name)
         {
             this.name = name;
+        }
+
+        public string getType()
+        {
+            return this.type;
+        }
+
+        public void setType(string type)
+        {
+            this.type = type;
         }
 
 

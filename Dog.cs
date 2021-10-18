@@ -6,6 +6,7 @@ namespace exerciciosCS
         public Dog(string name)
         {
             this.setName(name);
+            this.setType("Cachorro(a)");
         }
 
         

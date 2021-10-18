@@ -140,15 +140,17 @@ namespace exerciciosCS
                         
                     case 5:
                         string animal1Name;
-                        string animal1Type;
+                        int animal1Type;
+                        Animal myPet;
 
-                        string setType(int type) {
-                            if(type == 1) {
-                                return animal1Type = "cachorro";
-                            } else if (type == 2) {
-                                return animal1Type = "gato";
+                        Animal newAnimal(string name, int option){
+
+                            if(option == 1){
+                                return new Dog(name);
+                            } else if (option == 2){
+                                return new Cat(name);
                             } else {
-                                return animal1Type = "peixe";
+                                return new Fish(name);
                             }
                         }
 
@@ -156,10 +158,11 @@ namespace exerciciosCS
                         animal1Name = Console.ReadLine();
                         
                         Console.WriteLine("Qual o tipo do seu animal?\n(1)Cachorro\n(2)Gato\n(3)Peixe");
-                        animal1Type = setType(Convert.ToInt32(Console.ReadLine()));
-                        Console.WriteLine($"Seu {animal1Type} se chama {animal1Name}");
+                        animal1Type = Convert.ToInt32(Console.ReadLine());
 
-                       
+                        myPet = newAnimal(animal1Name, animal1Type);
+                        Console.WriteLine($"Seu pet se chama {myPet.name} e é um(a) {myPet.type}");
+
 
 
                         break;
