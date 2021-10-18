@@ -139,10 +139,7 @@ namespace exerciciosCS
                     break;
                         
                     case 5:
-                        string animal1Name;
-                        int animal1Type;
-                        Animal myPet;
-
+                        
                         Animal newAnimal(string name, int option){
 
                             if(option == 1){
@@ -154,14 +151,29 @@ namespace exerciciosCS
                             }
                         }
 
-                        Console.WriteLine("Qual o nome do seu animal?");
-                        animal1Name = Console.ReadLine();
-                        
-                        Console.WriteLine("Qual o tipo do seu animal?\n(1)Cachorro\n(2)Gato\n(3)Peixe");
-                        animal1Type = Convert.ToInt32(Console.ReadLine());
 
-                        myPet = newAnimal(animal1Name, animal1Type);
-                        Console.WriteLine($"Seu pet se chama {myPet.name} e é um(a) {myPet.type}");
+                        int count = 5;
+                        Animal[] animalList = new Animal[count];
+
+                        for (int i = 0; i < count; i++)
+                        {
+                            string animalName;
+                            int animalType;
+                            Console.WriteLine("Qual o nome do seu animal?");
+                            animalName = Console.ReadLine();
+                            
+                            Console.WriteLine("Qual o tipo do seu animal?\n(1)Cachorro\n(2)Gato\n(3)Peixe");
+                            animalType = Convert.ToInt32(Console.ReadLine());
+
+                            animalList[i] = newAnimal(animalName, animalType);
+                        }
+
+                        Console.WriteLine($"Aqui está a lista dos seus pets:");
+                        Console.WriteLine($"Nome: {animalList[0].name}, Tipo: {animalList[0].type}");
+                        Console.WriteLine($"Nome: {animalList[1].name}, Tipo: {animalList[1].type}");
+                        Console.WriteLine($"Nome: {animalList[2].name}, Tipo: {animalList[2].type}");
+                        Console.WriteLine($"Nome: {animalList[3].name}, Tipo: {animalList[3].type}");
+                        Console.WriteLine($"Nome: {animalList[4].name}, Tipo: {animalList[4].type}");
 
 
 
