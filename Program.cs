@@ -159,10 +159,10 @@ namespace exerciciosCS
                         {
                             string animalName;
                             int animalType;
-                            Console.WriteLine("Qual o nome do seu animal?");
+                            Console.WriteLine($"Qual o nome do seu animal {i+1}?");
                             animalName = Console.ReadLine();
                             
-                            Console.WriteLine("Qual o tipo do seu animal?\n(1)Cachorro\n(2)Gato\n(3)Peixe");
+                            Console.WriteLine($"Qual o tipo do seu animal {i+1}?\n(1)Cachorro\n(2)Gato\n(3)Peixe");
                             animalType = Convert.ToInt32(Console.ReadLine());
 
                             animalList[i] = newAnimal(animalName, animalType);
