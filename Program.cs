@@ -169,13 +169,10 @@ namespace exerciciosCS
                         }
 
                         Console.WriteLine($"Aqui está a lista dos seus pets:");
-                        Console.WriteLine($"Nome: {animalList[0].name}, Tipo: {animalList[0].type}");
-                        Console.WriteLine($"Nome: {animalList[1].name}, Tipo: {animalList[1].type}");
-                        Console.WriteLine($"Nome: {animalList[2].name}, Tipo: {animalList[2].type}");
-                        Console.WriteLine($"Nome: {animalList[3].name}, Tipo: {animalList[3].type}");
-                        Console.WriteLine($"Nome: {animalList[4].name}, Tipo: {animalList[4].type}");
-
-
+                        foreach (var item in animalList)
+                        {
+                            Console.WriteLine($"Nome: {item.name}, Tipo: {item.type}");
+                        }
 
                         break;
 
